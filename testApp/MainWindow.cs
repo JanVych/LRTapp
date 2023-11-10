@@ -45,7 +45,7 @@ namespace LRTapp
             buttonConnect.Enabled = false;
             buttonDisconnect.Enabled = true;
             buttonMeasureL.Enabled = true;
-            buttonMeasureR.Enabled = true;
+            //buttonMeasureR.Enabled = true;
         }
         private void buttonDisconnect_Click(object sender, EventArgs e)
         {
@@ -54,17 +54,17 @@ namespace LRTapp
             buttonDisconnect.Enabled = false;
             buttonConnect.Enabled = true;
             buttonMeasureL.Enabled = false;
-            buttonMeasureR.Enabled = false;
+            //buttonMeasureR.Enabled = false;
         }
-        private void buttonMeasureR_Click(object sender, EventArgs e)
-        {
-            if (Program.currentPatient == -1)
-            {
-                MessageBox.Show("Create new patient first", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            Mesure("P");
-        }
+        //private void buttonMeasureR_Click(object sender, EventArgs e)
+        //{
+        //    if (Program.currentPatient == -1)
+        //    {
+        //        MessageBox.Show("Create new patient first", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //        return;
+        //    }
+        //    Mesure("P");
+        //}
         private void buttonMeasureL_Click(object sender, EventArgs e)
         {
             if (Program.currentPatient == -1)
@@ -243,7 +243,7 @@ namespace LRTapp
         {
             buttonDisconnect.Enabled = false;
             buttonMeasureL.Enabled = false;
-            buttonMeasureR.Enabled = false;
+            //buttonMeasureR.Enabled = false;
             buttonSaveCSV.Enabled = false;
             buttonNew.Enabled = false;
         }
@@ -251,7 +251,7 @@ namespace LRTapp
         {
             buttonDisconnect.Enabled = true;
             buttonMeasureL.Enabled = true;
-            buttonMeasureR.Enabled = true;
+            //buttonMeasureR.Enabled = true;
             buttonSaveCSV.Enabled = true;
             buttonNew.Enabled = true;
         }

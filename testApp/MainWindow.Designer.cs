@@ -46,14 +46,11 @@ namespace LRTapp
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.labelTitle = new System.Windows.Forms.Label();
-            this.buttonBCompositionUC = new System.Windows.Forms.Button();
-            this.buttonMeasureUC = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.userControl11 = new LRTapp.UserControl1();
             this.userControl31 = new LRTapp.UserControl3();
             this.userControl21 = new LRTapp.UserControl2();
-            this.buttonMeasureR = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPatients)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -175,7 +172,6 @@ namespace LRTapp
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
-            this.panel1.Controls.Add(this.buttonMeasureR);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.buttonConnect);
@@ -218,8 +214,6 @@ namespace LRTapp
             this.panel2.BackColor = System.Drawing.Color.Silver;
             this.panel2.Controls.Add(this.labelBattery);
             this.panel2.Controls.Add(this.labelTitle);
-            this.panel2.Controls.Add(this.buttonBCompositionUC);
-            this.panel2.Controls.Add(this.buttonMeasureUC);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.button3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -241,26 +235,6 @@ namespace LRTapp
             this.labelTitle.Size = new System.Drawing.Size(161, 16);
             this.labelTitle.TabIndex = 18;
             this.labelTitle.Text = "Lymphostat Research Tool";
-            // 
-            // buttonBCompositionUC
-            // 
-            this.buttonBCompositionUC.Location = new System.Drawing.Point(455, 8);
-            this.buttonBCompositionUC.Name = "buttonBCompositionUC";
-            this.buttonBCompositionUC.Size = new System.Drawing.Size(89, 30);
-            this.buttonBCompositionUC.TabIndex = 8;
-            this.buttonBCompositionUC.Text = "2D Graph";
-            this.buttonBCompositionUC.UseVisualStyleBackColor = true;
-            this.buttonBCompositionUC.Click += new System.EventHandler(this.buttonBCompositionUC_Click);
-            // 
-            // buttonMeasureUC
-            // 
-            this.buttonMeasureUC.Location = new System.Drawing.Point(360, 8);
-            this.buttonMeasureUC.Name = "buttonMeasureUC";
-            this.buttonMeasureUC.Size = new System.Drawing.Size(89, 30);
-            this.buttonMeasureUC.TabIndex = 7;
-            this.buttonMeasureUC.Text = "Measure";
-            this.buttonMeasureUC.UseVisualStyleBackColor = true;
-            this.buttonMeasureUC.Click += new System.EventHandler(this.buttonMeasureUC_Click);
             // 
             // button1
             // 
@@ -314,16 +288,6 @@ namespace LRTapp
             this.userControl21.Size = new System.Drawing.Size(1284, 610);
             this.userControl21.TabIndex = 22;
             // 
-            // buttonMeasureR
-            // 
-            this.buttonMeasureR.Enabled = false;
-            this.buttonMeasureR.Location = new System.Drawing.Point(12, 172);
-            this.buttonMeasureR.Name = "buttonMeasureR";
-            this.buttonMeasureR.Size = new System.Drawing.Size(123, 46);
-            this.buttonMeasureR.TabIndex = 27;
-            this.buttonMeasureR.Text = "Measure Right";
-            this.buttonMeasureR.UseVisualStyleBackColor = true;
-            // 
             // mainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -367,8 +331,6 @@ namespace LRTapp
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button buttonBCompositionUC;
-        private System.Windows.Forms.Button buttonMeasureUC;
         private UserControl2 userControl21;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNote;
@@ -377,7 +339,6 @@ namespace LRTapp
         private UserControl1 userControl11;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button buttonMeasureR;
     }
 }
 
